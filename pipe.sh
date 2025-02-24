@@ -36,6 +36,7 @@ sudo ufw enable
 sudo ufw allow 22/tcp
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
+sudo ufw allow 8003/tcp
 
 # sudo ./pop 명령어 실행
 sudo "$WORK/pop" \
