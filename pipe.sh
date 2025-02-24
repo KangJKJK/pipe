@@ -31,17 +31,11 @@ cache_dir="$WORK/download_cache"
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
-# 포트 22 (SSH) 허용
-sudo ufw allow 22/tcp
-
-# 포트 80 (HTTP) 허용
-sudo ufw allow 80/tcp
-
-# 포트 443 (HTTPS) 허용
-sudo ufw allow 443/tcp
-
 # UFW 활성화
 sudo ufw enable
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
 
 # sudo ./pop 명령어 실행
 sudo "$WORK/pop" \
