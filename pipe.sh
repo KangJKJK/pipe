@@ -43,8 +43,3 @@ sudo "$WORK/pop" \
   --max-disk "$max_disk" \
   --cache-dir "$cache_dir" \
   --pubKey "$pubKey"
-
-  *)
-    echo -e "${RED}잘못된 선택입니다. 다시 시도하세요.${NC}"
-    ;;
-esac
